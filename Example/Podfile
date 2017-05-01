@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'PreviewController_Example' do
+  pod 'PreviewController', :path => '../'
+end

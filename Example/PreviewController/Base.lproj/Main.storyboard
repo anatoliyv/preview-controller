@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PreviewController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="B7V-oD-C89">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-2a-uLw">
+                                        <rect key="frame" x="0.0" y="7" width="114.5" height="30"/>
+                                        <state key="normal" title="URL"/>
+                                        <connections>
+                                            <action selector="pressedWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gZW-fh-G9E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClR-pT-7BG">
+                                        <rect key="frame" x="130.5" y="7" width="114" height="30"/>
+                                        <state key="normal" title="Path"/>
+                                        <connections>
+                                            <action selector="pressedWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Whf-1J-nlt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHg-6V-mD7">
+                                        <rect key="frame" x="260.5" y="7" width="114.5" height="30"/>
+                                        <state key="normal" title="UIImage"/>
+                                        <connections>
+                                            <action selector="pressedWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="alL-NS-Oo3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6VB-2Z-LmP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B7V-oD-C89" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3EB-4N-WLT"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="B7V-oD-C89" secondAttribute="bottom" id="I3s-b1-LJM"/>
+                            <constraint firstAttribute="trailing" secondItem="B7V-oD-C89" secondAttribute="trailing" id="Q7M-ui-1pt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="byImageButton" destination="kHg-6V-mD7" id="QsJ-wc-ngF"/>
+                        <outlet property="byPathButton" destination="ClR-pT-7BG" id="5hw-S4-RXV"/>
+                        <outlet property="byURLButton" destination="PHe-2a-uLw" id="4AD-Vy-y5z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>

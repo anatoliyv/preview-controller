@@ -1,0 +1,6 @@
+framework module Pods_PreviewController_Example {
+  umbrella header "Pods-PreviewController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

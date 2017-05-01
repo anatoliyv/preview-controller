@@ -1,0 +1,16 @@
+PODS:
+  - PreviewController (0.1.0)
+
+DEPENDENCIES:
+  - PreviewController (from `../`)
+
+EXTERNAL SOURCES:
+  PreviewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PreviewController: 10e0e26f21226fb5397cee9e860abf6cef9f4f50
+
+PODFILE CHECKSUM: df7169544d22c8577355e3f4d1a99a6cd7c3f552
+
+COCOAPODS: 1.2.0
